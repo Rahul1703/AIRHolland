@@ -1,0 +1,717 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD382B7AD91C3B003E849716 /* Pods_Air_Holland.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82CB236AE3C83B2DE68D2C3F /* Pods_Air_Holland.framework */; };
+		B70E5CFF2340F917002F31A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70E5CFE2340F917002F31A6 /* Constants.swift */; };
+		B70E5D012340FB53002F31A6 /* EventDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70E5D002340FB53002F31A6 /* EventDetailTableViewController.swift */; };
+		B70E5D032340FFAC002F31A6 /* EventListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70E5D022340FFAC002F31A6 /* EventListRouter.swift */; };
+		B76161CB23410DBE00E8A188 /* RealmUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76161CA23410DBE00E8A188 /* RealmUtility.swift */; };
+		B76161CD23411AC500E8A188 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76161CC23411AC500E8A188 /* EventService.swift */; };
+		B7C09A9B233FCD4700F5BD43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C09A9A233FCD4700F5BD43 /* AppDelegate.swift */; };
+		B7C09A9D233FCD4700F5BD43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C09A9C233FCD4700F5BD43 /* SceneDelegate.swift */; };
+		B7C09AA4233FCD4900F5BD43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7C09AA3233FCD4900F5BD43 /* Assets.xcassets */; };
+		B7C09AA7233FCD4900F5BD43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7C09AA5233FCD4900F5BD43 /* LaunchScreen.storyboard */; };
+		B7C09AB2233FCD4900F5BD43 /* Air_HollandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C09AB1233FCD4900F5BD43 /* Air_HollandTests.swift */; };
+		B7C09AC5233FCFAF00F5BD43 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C09AC4233FCFAF00F5BD43 /* EventListViewController.swift */; };
+		B7C09AC7233FCFF700F5BD43 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7C09AC6233FCFF700F5BD43 /* Events.storyboard */; };
+		B7C09AC9233FD3D700F5BD43 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7C09AC8233FD3D600F5BD43 /* fontawesome-webfont.ttf */; };
+		B7C09ACB233FDD8E00F5BD43 /* EventListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C09ACA233FDD8E00F5BD43 /* EventListTableViewCell.swift */; };
+		B7C09AD1233FEB5B00F5BD43 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C09AD0233FEB5B00F5BD43 /* EventModel.swift */; };
+		B7C09AD32340B26600F5BD43 /* EventListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C09AD22340B26600F5BD43 /* EventListPresenter.swift */; };
+		B7C09ADC2340C56200F5BD43 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C09AD82340C56200F5BD43 /* ReachabilityManager.swift */; };
+		B7C09ADD2340C56200F5BD43 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C09AD92340C56200F5BD43 /* NetworkManager.swift */; };
+		B7C09AE62340CAB500F5BD43 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C09AE32340CAB500F5BD43 /* Request.swift */; };
+		B7C09AE72340CAB500F5BD43 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C09AE42340CAB500F5BD43 /* DataRequest.swift */; };
+		B7C09AE82340CAB500F5BD43 /* JSONRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C09AE52340CAB500F5BD43 /* JSONRequest.swift */; };
+		B7C09AEA2340D99D00F5BD43 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C09AE92340D99D00F5BD43 /* ActivityIndicator.swift */; };
+		BB705D6DC5781690DF5C04D0 /* Pods_Air_HollandTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B58BC0EF60EEC75DAC20644 /* Pods_Air_HollandTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7C09AAE233FCD4900F5BD43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7C09A8F233FCD4700F5BD43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7C09A96233FCD4700F5BD43;
+			remoteInfo = "Air Holland";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1378BCE95760E40C8D9467A2 /* Pods-Air Holland.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Air Holland.release.xcconfig"; path = "Target Support Files/Pods-Air Holland/Pods-Air Holland.release.xcconfig"; sourceTree = "<group>"; };
+		3B58BC0EF60EEC75DAC20644 /* Pods_Air_HollandTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Air_HollandTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82CB236AE3C83B2DE68D2C3F /* Pods_Air_Holland.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Air_Holland.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96CF132B1DA700ECCBBB1B13 /* Pods-Air Holland.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Air Holland.debug.xcconfig"; path = "Target Support Files/Pods-Air Holland/Pods-Air Holland.debug.xcconfig"; sourceTree = "<group>"; };
+		AACE54AF440EF07232F3A1FF /* Pods-Air HollandTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Air HollandTests.release.xcconfig"; path = "Target Support Files/Pods-Air HollandTests/Pods-Air HollandTests.release.xcconfig"; sourceTree = "<group>"; };
+		B70E5CFE2340F917002F31A6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B70E5D002340FB53002F31A6 /* EventDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailTableViewController.swift; sourceTree = "<group>"; };
+		B70E5D022340FFAC002F31A6 /* EventListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListRouter.swift; sourceTree = "<group>"; };
+		B76161CA23410DBE00E8A188 /* RealmUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmUtility.swift; sourceTree = "<group>"; };
+		B76161CC23411AC500E8A188 /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
+		B7C09A97233FCD4700F5BD43 /* Air Holland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Air Holland.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7C09A9A233FCD4700F5BD43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B7C09A9C233FCD4700F5BD43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B7C09AA3233FCD4900F5BD43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7C09AA6233FCD4900F5BD43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7C09AA8233FCD4900F5BD43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7C09AAD233FCD4900F5BD43 /* Air HollandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Air HollandTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7C09AB1233FCD4900F5BD43 /* Air_HollandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Air_HollandTests.swift; sourceTree = "<group>"; };
+		B7C09AB3233FCD4900F5BD43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7C09AC4233FCFAF00F5BD43 /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
+		B7C09AC6233FCFF700F5BD43 /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
+		B7C09AC8233FD3D600F5BD43 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
+		B7C09ACA233FDD8E00F5BD43 /* EventListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListTableViewCell.swift; sourceTree = "<group>"; };
+		B7C09AD0233FEB5B00F5BD43 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		B7C09AD22340B26600F5BD43 /* EventListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListPresenter.swift; sourceTree = "<group>"; };
+		B7C09AD82340C56200F5BD43 /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		B7C09AD92340C56200F5BD43 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B7C09AE32340CAB500F5BD43 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		B7C09AE42340CAB500F5BD43 /* DataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
+		B7C09AE52340CAB500F5BD43 /* JSONRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONRequest.swift; sourceTree = "<group>"; };
+		B7C09AE92340D99D00F5BD43 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		F0C1FE58C8C483457E72AE39 /* Pods-Air HollandTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Air HollandTests.debug.xcconfig"; path = "Target Support Files/Pods-Air HollandTests/Pods-Air HollandTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7C09A94233FCD4700F5BD43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD382B7AD91C3B003E849716 /* Pods_Air_Holland.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7C09AAA233FCD4900F5BD43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB705D6DC5781690DF5C04D0 /* Pods_Air_HollandTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B59CE5D541776227C1B0BA5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96CF132B1DA700ECCBBB1B13 /* Pods-Air Holland.debug.xcconfig */,
+				1378BCE95760E40C8D9467A2 /* Pods-Air Holland.release.xcconfig */,
+				F0C1FE58C8C483457E72AE39 /* Pods-Air HollandTests.debug.xcconfig */,
+				AACE54AF440EF07232F3A1FF /* Pods-Air HollandTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B70E5CFD2340F8FC002F31A6 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				B70E5CFE2340F917002F31A6 /* Constants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		B76161C923410D7600E8A188 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				B76161CA23410DBE00E8A188 /* RealmUtility.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		B7C09A8E233FCD4700F5BD43 = {
+			isa = PBXGroup;
+			children = (
+				B7C09A99233FCD4700F5BD43 /* Air Holland */,
+				B7C09AB0233FCD4900F5BD43 /* Air HollandTests */,
+				B7C09A98233FCD4700F5BD43 /* Products */,
+				B59CE5D541776227C1B0BA5C /* Pods */,
+				C512866F80ABCC282D4607A9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B7C09A98233FCD4700F5BD43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7C09A97233FCD4700F5BD43 /* Air Holland.app */,
+				B7C09AAD233FCD4900F5BD43 /* Air HollandTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7C09A99233FCD4700F5BD43 /* Air Holland */ = {
+			isa = PBXGroup;
+			children = (
+				B7C09A9A233FCD4700F5BD43 /* AppDelegate.swift */,
+				B7C09A9C233FCD4700F5BD43 /* SceneDelegate.swift */,
+				B70E5CFD2340F8FC002F31A6 /* Constant */,
+				B7C09ABC233FCD8B00F5BD43 /* Modules */,
+				B7C09ABE233FCDA500F5BD43 /* Network */,
+				B7C09ABD233FCD9800F5BD43 /* Utility */,
+				B7C09ACC233FDF4800F5BD43 /* Resources */,
+				B7C09AA3233FCD4900F5BD43 /* Assets.xcassets */,
+				B7C09AA5233FCD4900F5BD43 /* LaunchScreen.storyboard */,
+				B7C09AA8233FCD4900F5BD43 /* Info.plist */,
+			);
+			path = "Air Holland";
+			sourceTree = "<group>";
+		};
+		B7C09AB0233FCD4900F5BD43 /* Air HollandTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7C09AB1233FCD4900F5BD43 /* Air_HollandTests.swift */,
+				B7C09AB3233FCD4900F5BD43 /* Info.plist */,
+			);
+			path = "Air HollandTests";
+			sourceTree = "<group>";
+		};
+		B7C09ABC233FCD8B00F5BD43 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B7C09ABF233FCF0300F5BD43 /* Events */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B7C09ABD233FCD9800F5BD43 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B76161C923410D7600E8A188 /* Realm */,
+				B7C09AE92340D99D00F5BD43 /* ActivityIndicator.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		B7C09ABE233FCDA500F5BD43 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B7C09AE22340CAB500F5BD43 /* Request */,
+				B7C09AD92340C56200F5BD43 /* NetworkManager.swift */,
+				B7C09AD82340C56200F5BD43 /* ReachabilityManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B7C09ABF233FCF0300F5BD43 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				B7C09AC6233FCFF700F5BD43 /* Events.storyboard */,
+				B7C09ACF233FEB2200F5BD43 /* Model */,
+				B7C09AC2233FCF8B00F5BD43 /* Event List */,
+				B7C09AC3233FCF9600F5BD43 /* Event Details */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		B7C09AC2233FCF8B00F5BD43 /* Event List */ = {
+			isa = PBXGroup;
+			children = (
+				B7C09AC4233FCFAF00F5BD43 /* EventListViewController.swift */,
+				B7C09ACA233FDD8E00F5BD43 /* EventListTableViewCell.swift */,
+				B7C09AD22340B26600F5BD43 /* EventListPresenter.swift */,
+				B70E5D022340FFAC002F31A6 /* EventListRouter.swift */,
+				B76161CC23411AC500E8A188 /* EventService.swift */,
+			);
+			path = "Event List";
+			sourceTree = "<group>";
+		};
+		B7C09AC3233FCF9600F5BD43 /* Event Details */ = {
+			isa = PBXGroup;
+			children = (
+				B70E5D002340FB53002F31A6 /* EventDetailTableViewController.swift */,
+			);
+			path = "Event Details";
+			sourceTree = "<group>";
+		};
+		B7C09ACC233FDF4800F5BD43 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B7C09AC8233FD3D600F5BD43 /* fontawesome-webfont.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B7C09ACF233FEB2200F5BD43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B7C09AD0233FEB5B00F5BD43 /* EventModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7C09AE22340CAB500F5BD43 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				B7C09AE32340CAB500F5BD43 /* Request.swift */,
+				B7C09AE42340CAB500F5BD43 /* DataRequest.swift */,
+				B7C09AE52340CAB500F5BD43 /* JSONRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		C512866F80ABCC282D4607A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82CB236AE3C83B2DE68D2C3F /* Pods_Air_Holland.framework */,
+				3B58BC0EF60EEC75DAC20644 /* Pods_Air_HollandTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7C09A96233FCD4700F5BD43 /* Air Holland */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7C09AB6233FCD4900F5BD43 /* Build configuration list for PBXNativeTarget "Air Holland" */;
+			buildPhases = (
+				A7B5DB70D973927C8D2FB2D3 /* [CP] Check Pods Manifest.lock */,
+				B7C09A93233FCD4700F5BD43 /* Sources */,
+				B7C09A94233FCD4700F5BD43 /* Frameworks */,
+				B7C09A95233FCD4700F5BD43 /* Resources */,
+				F25E4A4D5AD504087EF46165 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Air Holland";
+			productName = "Air Holland";
+			productReference = B7C09A97233FCD4700F5BD43 /* Air Holland.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7C09AAC233FCD4900F5BD43 /* Air HollandTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7C09AB9233FCD4900F5BD43 /* Build configuration list for PBXNativeTarget "Air HollandTests" */;
+			buildPhases = (
+				8BC56275A547A29503B7BCF5 /* [CP] Check Pods Manifest.lock */,
+				B7C09AA9233FCD4900F5BD43 /* Sources */,
+				B7C09AAA233FCD4900F5BD43 /* Frameworks */,
+				B7C09AAB233FCD4900F5BD43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7C09AAF233FCD4900F5BD43 /* PBXTargetDependency */,
+			);
+			name = "Air HollandTests";
+			productName = "Air HollandTests";
+			productReference = B7C09AAD233FCD4900F5BD43 /* Air HollandTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7C09A8F233FCD4700F5BD43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = Rahul;
+				TargetAttributes = {
+					B7C09A96233FCD4700F5BD43 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					B7C09AAC233FCD4900F5BD43 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = B7C09A96233FCD4700F5BD43;
+					};
+				};
+			};
+			buildConfigurationList = B7C09A92233FCD4700F5BD43 /* Build configuration list for PBXProject "Air Holland" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7C09A8E233FCD4700F5BD43;
+			productRefGroup = B7C09A98233FCD4700F5BD43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7C09A96233FCD4700F5BD43 /* Air Holland */,
+				B7C09AAC233FCD4900F5BD43 /* Air HollandTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7C09A95233FCD4700F5BD43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7C09AA7233FCD4900F5BD43 /* LaunchScreen.storyboard in Resources */,
+				B7C09AC7233FCFF700F5BD43 /* Events.storyboard in Resources */,
+				B7C09AC9233FD3D700F5BD43 /* fontawesome-webfont.ttf in Resources */,
+				B7C09AA4233FCD4900F5BD43 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7C09AAB233FCD4900F5BD43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8BC56275A547A29503B7BCF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Air HollandTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7B5DB70D973927C8D2FB2D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Air Holland-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F25E4A4D5AD504087EF46165 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Air Holland/Pods-Air Holland-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Air Holland/Pods-Air Holland-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Air Holland/Pods-Air Holland-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7C09A93233FCD4700F5BD43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7C09ADD2340C56200F5BD43 /* NetworkManager.swift in Sources */,
+				B7C09AE72340CAB500F5BD43 /* DataRequest.swift in Sources */,
+				B76161CD23411AC500E8A188 /* EventService.swift in Sources */,
+				B76161CB23410DBE00E8A188 /* RealmUtility.swift in Sources */,
+				B7C09ADC2340C56200F5BD43 /* ReachabilityManager.swift in Sources */,
+				B7C09AC5233FCFAF00F5BD43 /* EventListViewController.swift in Sources */,
+				B7C09AEA2340D99D00F5BD43 /* ActivityIndicator.swift in Sources */,
+				B7C09A9B233FCD4700F5BD43 /* AppDelegate.swift in Sources */,
+				B7C09A9D233FCD4700F5BD43 /* SceneDelegate.swift in Sources */,
+				B70E5D012340FB53002F31A6 /* EventDetailTableViewController.swift in Sources */,
+				B70E5CFF2340F917002F31A6 /* Constants.swift in Sources */,
+				B7C09AD1233FEB5B00F5BD43 /* EventModel.swift in Sources */,
+				B70E5D032340FFAC002F31A6 /* EventListRouter.swift in Sources */,
+				B7C09ACB233FDD8E00F5BD43 /* EventListTableViewCell.swift in Sources */,
+				B7C09AE62340CAB500F5BD43 /* Request.swift in Sources */,
+				B7C09AD32340B26600F5BD43 /* EventListPresenter.swift in Sources */,
+				B7C09AE82340CAB500F5BD43 /* JSONRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7C09AA9233FCD4900F5BD43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7C09AB2233FCD4900F5BD43 /* Air_HollandTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7C09AAF233FCD4900F5BD43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7C09A96233FCD4700F5BD43 /* Air Holland */;
+			targetProxy = B7C09AAE233FCD4900F5BD43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B7C09AA5233FCD4900F5BD43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7C09AA6233FCD4900F5BD43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7C09AB4233FCD4900F5BD43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		B7C09AB5233FCD4900F5BD43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7C09AB7233FCD4900F5BD43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96CF132B1DA700ECCBBB1B13 /* Pods-Air Holland.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Air Holland/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "srivastava.Air-Holland";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B7C09AB8233FCD4900F5BD43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1378BCE95760E40C8D9467A2 /* Pods-Air Holland.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Air Holland/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "srivastava.Air-Holland";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B7C09ABA233FCD4900F5BD43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0C1FE58C8C483457E72AE39 /* Pods-Air HollandTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Air HollandTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "srivastava.Air-HollandTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Air Holland.app/Air Holland";
+			};
+			name = Debug;
+		};
+		B7C09ABB233FCD4900F5BD43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AACE54AF440EF07232F3A1FF /* Pods-Air HollandTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Air HollandTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "srivastava.Air-HollandTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Air Holland.app/Air Holland";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7C09A92233FCD4700F5BD43 /* Build configuration list for PBXProject "Air Holland" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7C09AB4233FCD4900F5BD43 /* Debug */,
+				B7C09AB5233FCD4900F5BD43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7C09AB6233FCD4900F5BD43 /* Build configuration list for PBXNativeTarget "Air Holland" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7C09AB7233FCD4900F5BD43 /* Debug */,
+				B7C09AB8233FCD4900F5BD43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7C09AB9233FCD4900F5BD43 /* Build configuration list for PBXNativeTarget "Air HollandTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7C09ABA233FCD4900F5BD43 /* Debug */,
+				B7C09ABB233FCD4900F5BD43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7C09A8F233FCD4700F5BD43 /* Project object */;
+}
