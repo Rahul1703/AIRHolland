@@ -24,9 +24,9 @@ class EventService: NSObject {
         if isAPICall || eventList.count == 0 {
             
             //API Call initiate
-            getEventList(onSuccess: { (list) in
+            getEventRequest(onSuccess: {
                 
-                let data = self.formatEventData(eventList: RealmUtility.shared.getObjects())
+                let data = self.formatEventData(eventList: eventList)
                 onSuccess(data)
             }) { (message) in
                 onFailure(message)
