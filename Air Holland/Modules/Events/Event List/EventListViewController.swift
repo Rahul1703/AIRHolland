@@ -15,7 +15,7 @@ protocol EventView: NSObjectProtocol {
     func startLoading()
     func finishLoading()
     func setEvents(_ events: [String: [EventModel]])
-    func setEmpty()
+    func showErrorMessage(message: String)
 }
 
 //MARK:- EventListViewController
@@ -86,6 +86,11 @@ class EventListViewController: UIViewController {
 extension EventListViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
+        
+        if eventList.keys.count == 0 {
+            tableView.setEmptyView(title: "You don't have any events.", message: "Your events will be in here.")
+        }
+        
         return eventList.keys.count
     }
     
@@ -147,7 +152,8 @@ extension EventListViewController: EventView, ActivityIndicator {
         eventList = events
     }
     
-    func setEmpty() {
-        
+    func showErrorMessage(message: String) {
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        present(alert, animated: true, completion: nil)
     }
 }

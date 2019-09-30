@@ -13,7 +13,7 @@ import RealmSwift
 class EventService: NSObject {
         
     //This method either perform api call or retrieve data from local storage.
-    static func getEventList(isAPICall: Bool = false, completion: @escaping ([String : [EventModel]])->()) {
+    static func getEventList(isAPICall: Bool = false, onSuccess: @escaping (_ list: [String : [EventModel]])->(), onFailure: @escaping (_ message: String) -> ()) {
         
         //Getting data from local storage.
         let eventList: [EventModel] = RealmUtility.shared.getObjects()
@@ -24,21 +24,23 @@ class EventService: NSObject {
         if isAPICall || eventList.count == 0 {
             
             //API Call initiate
-            getEventRequest {
+            getEventList(onSuccess: { (list) in
                 
                 let data = self.formatEventData(eventList: RealmUtility.shared.getObjects())
-                completion(data)
+                onSuccess(data)
+            }) { (message) in
+                onFailure(message)
             }
         }
         else {
             
             let data = self.formatEventData(eventList: eventList)
-            return completion(data)
+            onSuccess(data)
         }
     }
     
     //API Call.
-    static func getEventRequest(completion: (()->())?) {
+    static func getEventRequest(onSuccess: @escaping ()->(), onFailure: @escaping (_ message: String) -> ()) {
         
         NetworkUtility.getData(endPoint: .EventList, requestMethod: .GET, successBlock: { (list) in
             
@@ -47,11 +49,11 @@ class EventService: NSObject {
                 
                 //Storing new records.
                 RealmUtility.shared.saveObjects(object: list)
-                completion?()
+                onSuccess()
             }
 
         }) { (message) in
-            
+            onFailure(message)
         }
     }
     

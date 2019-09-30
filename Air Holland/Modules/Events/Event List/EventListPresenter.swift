@@ -10,7 +10,7 @@ import UIKit
 
 //MARK:- PresenterDelegate
 protocol PresenterDelegate {
-    func getEventList(isAPICall : Bool)
+    func getEventList(isAPICall: Bool)
 }
 
 //MARK:- EventListPresenter
@@ -34,10 +34,15 @@ extension EventListPresenter : PresenterDelegate {
         eventView?.startLoading()
         
         //API Call to get data.
-        EventService.getEventList(isAPICall: isAPICall, completion: { [weak self] list in
+        EventService.getEventList(isAPICall: isAPICall, onSuccess: {  [weak self] (list) in
             
             self?.eventView?.finishLoading()
             self?.eventView?.setEvents(list)
-        })
+
+        }) { [weak self] (message) in
+            
+            self?.eventView?.finishLoading()
+            self?.eventView?.showErrorMessage(message: message)
+        }
     }
 }
