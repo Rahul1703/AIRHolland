@@ -13,6 +13,7 @@
 		B70E5D032340FFAC002F31A6 /* EventListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70E5D022340FFAC002F31A6 /* EventListRouter.swift */; };
 		B76161CB23410DBE00E8A188 /* RealmUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76161CA23410DBE00E8A188 /* RealmUtility.swift */; };
 		B76161CD23411AC500E8A188 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76161CC23411AC500E8A188 /* EventService.swift */; };
+		B765BEEF2341DBD6005ADD6E /* NetworkUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B765BEEE2341DBD6005ADD6E /* NetworkUtility.swift */; };
 		B7C09A9B233FCD4700F5BD43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C09A9A233FCD4700F5BD43 /* AppDelegate.swift */; };
 		B7C09A9D233FCD4700F5BD43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C09A9C233FCD4700F5BD43 /* SceneDelegate.swift */; };
 		B7C09AA4233FCD4900F5BD43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7C09AA3233FCD4900F5BD43 /* Assets.xcassets */; };
@@ -24,11 +25,6 @@
 		B7C09ACB233FDD8E00F5BD43 /* EventListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C09ACA233FDD8E00F5BD43 /* EventListTableViewCell.swift */; };
 		B7C09AD1233FEB5B00F5BD43 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C09AD0233FEB5B00F5BD43 /* EventModel.swift */; };
 		B7C09AD32340B26600F5BD43 /* EventListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C09AD22340B26600F5BD43 /* EventListPresenter.swift */; };
-		B7C09ADC2340C56200F5BD43 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C09AD82340C56200F5BD43 /* ReachabilityManager.swift */; };
-		B7C09ADD2340C56200F5BD43 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C09AD92340C56200F5BD43 /* NetworkManager.swift */; };
-		B7C09AE62340CAB500F5BD43 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C09AE32340CAB500F5BD43 /* Request.swift */; };
-		B7C09AE72340CAB500F5BD43 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C09AE42340CAB500F5BD43 /* DataRequest.swift */; };
-		B7C09AE82340CAB500F5BD43 /* JSONRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C09AE52340CAB500F5BD43 /* JSONRequest.swift */; };
 		B7C09AEA2340D99D00F5BD43 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C09AE92340D99D00F5BD43 /* ActivityIndicator.swift */; };
 		BB705D6DC5781690DF5C04D0 /* Pods_Air_HollandTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B58BC0EF60EEC75DAC20644 /* Pods_Air_HollandTests.framework */; };
 /* End PBXBuildFile section */
@@ -54,6 +50,7 @@
 		B70E5D022340FFAC002F31A6 /* EventListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListRouter.swift; sourceTree = "<group>"; };
 		B76161CA23410DBE00E8A188 /* RealmUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmUtility.swift; sourceTree = "<group>"; };
 		B76161CC23411AC500E8A188 /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
+		B765BEEE2341DBD6005ADD6E /* NetworkUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtility.swift; sourceTree = "<group>"; };
 		B7C09A97233FCD4700F5BD43 /* Air Holland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Air Holland.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7C09A9A233FCD4700F5BD43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7C09A9C233FCD4700F5BD43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,11 +66,6 @@
 		B7C09ACA233FDD8E00F5BD43 /* EventListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListTableViewCell.swift; sourceTree = "<group>"; };
 		B7C09AD0233FEB5B00F5BD43 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
 		B7C09AD22340B26600F5BD43 /* EventListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListPresenter.swift; sourceTree = "<group>"; };
-		B7C09AD82340C56200F5BD43 /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
-		B7C09AD92340C56200F5BD43 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		B7C09AE32340CAB500F5BD43 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		B7C09AE42340CAB500F5BD43 /* DataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
-		B7C09AE52340CAB500F5BD43 /* JSONRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONRequest.swift; sourceTree = "<group>"; };
 		B7C09AE92340D99D00F5BD43 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		F0C1FE58C8C483457E72AE39 /* Pods-Air HollandTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Air HollandTests.debug.xcconfig"; path = "Target Support Files/Pods-Air HollandTests/Pods-Air HollandTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -191,9 +183,7 @@
 		B7C09ABE233FCDA500F5BD43 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				B7C09AE22340CAB500F5BD43 /* Request */,
-				B7C09AD92340C56200F5BD43 /* NetworkManager.swift */,
-				B7C09AD82340C56200F5BD43 /* ReachabilityManager.swift */,
+				B765BEEE2341DBD6005ADD6E /* NetworkUtility.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -243,16 +233,6 @@
 				B7C09AD0233FEB5B00F5BD43 /* EventModel.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		B7C09AE22340CAB500F5BD43 /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				B7C09AE32340CAB500F5BD43 /* Request.swift */,
-				B7C09AE42340CAB500F5BD43 /* DataRequest.swift */,
-				B7C09AE52340CAB500F5BD43 /* JSONRequest.swift */,
-			);
-			path = Request;
 			sourceTree = "<group>";
 		};
 		C512866F80ABCC282D4607A9 /* Frameworks */ = {
@@ -433,11 +413,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7C09ADD2340C56200F5BD43 /* NetworkManager.swift in Sources */,
-				B7C09AE72340CAB500F5BD43 /* DataRequest.swift in Sources */,
 				B76161CD23411AC500E8A188 /* EventService.swift in Sources */,
 				B76161CB23410DBE00E8A188 /* RealmUtility.swift in Sources */,
-				B7C09ADC2340C56200F5BD43 /* ReachabilityManager.swift in Sources */,
 				B7C09AC5233FCFAF00F5BD43 /* EventListViewController.swift in Sources */,
 				B7C09AEA2340D99D00F5BD43 /* ActivityIndicator.swift in Sources */,
 				B7C09A9B233FCD4700F5BD43 /* AppDelegate.swift in Sources */,
@@ -445,11 +422,10 @@
 				B70E5D012340FB53002F31A6 /* EventDetailTableViewController.swift in Sources */,
 				B70E5CFF2340F917002F31A6 /* Constants.swift in Sources */,
 				B7C09AD1233FEB5B00F5BD43 /* EventModel.swift in Sources */,
+				B765BEEF2341DBD6005ADD6E /* NetworkUtility.swift in Sources */,
 				B70E5D032340FFAC002F31A6 /* EventListRouter.swift in Sources */,
 				B7C09ACB233FDD8E00F5BD43 /* EventListTableViewCell.swift in Sources */,
-				B7C09AE62340CAB500F5BD43 /* Request.swift in Sources */,
 				B7C09AD32340B26600F5BD43 /* EventListPresenter.swift in Sources */,
-				B7C09AE82340CAB500F5BD43 /* JSONRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,11 +9,13 @@
 import UIKit
 import Foundation
 
+//MARK:- EventRouterDelegate
 protocol EventRouterDelegate {
     
     func showEventDetail(eventModel: EventModel)
 }
 
+//MARK:- EventListRouter
 class EventListRouter {
     
     fileprivate weak var eventListVC: EventListViewController?
@@ -23,8 +25,10 @@ class EventListRouter {
     }
 }
 
+//MARK:- EventRouterDelegate
 extension EventListRouter: EventRouterDelegate {
     
+    //Display Event Detail Screen
     func showEventDetail(eventModel: EventModel) {
         
         let eventStoryboard = UIStoryboard(name: Storyboard.events, bundle: nil)

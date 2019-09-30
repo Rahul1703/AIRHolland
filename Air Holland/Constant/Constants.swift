@@ -9,7 +9,7 @@
 import Foundation
 
 //MARK:- URL
-let APP_URL = "https://get.rosterbuster.com/wp-content/uploads/dummy-response.json"
+let APP_URL = "https://get.rosterbuster.com/wp-content/uploads/"
 
 //MARK:- String Constants
 struct StringConstants {

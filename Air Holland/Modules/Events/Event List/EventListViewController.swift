@@ -9,6 +9,7 @@
 import UIKit
 import NVActivityIndicatorView
 
+/// This protocol implemented in EventListViewController. It's called by Presenter.
 protocol EventView: NSObjectProtocol {
     
     func startLoading()
@@ -17,6 +18,7 @@ protocol EventView: NSObjectProtocol {
     func setEmpty()
 }
 
+//MARK:- EventListViewController
 class EventListViewController: UIViewController {
 
     //MARK:- Outlets
@@ -26,6 +28,7 @@ class EventListViewController: UIViewController {
     fileprivate var eventPresenter: EventListPresenter? = nil
     fileprivate var eventRouter: EventListRouter? = nil
 
+    /// This property is used for refreshing the list content when pull to refresh perform.
     lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(EventListViewController.handleRefresh(_:)), for: .valueChanged)
@@ -33,8 +36,10 @@ class EventListViewController: UIViewController {
         return refreshControl
     }()
     
+    /// This property is used to store event list dates to display in tableview header.
     var eventTitles: [String] = []
     
+    /// This property will contain grouping of all the elements.
     var eventList: [String: [EventModel]] = [String: [EventModel]]() {
         didSet {
             eventTitles = Array(eventList.keys).sorted()
@@ -45,6 +50,7 @@ class EventListViewController: UIViewController {
         }
     }
 
+    //MARK:- LifeCycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -53,12 +59,14 @@ class EventListViewController: UIViewController {
         initialize()
     }
     
+    /// This method is used to setup view.
     func setupView() {
         
         title = StringConstants.events
         tableView.addSubview(self.refreshControl)
     }
     
+    /// This method is used to bind presenter and router also initiate api call for data.
     func initialize() {
         
         eventPresenter = EventListPresenter(view: self)
@@ -67,6 +75,8 @@ class EventListViewController: UIViewController {
         eventPresenter?.getEventList()
     }
     
+    /// This method is called when pull to refresh is performs.
+    /// - Parameter refreshControl: refresh control object.
     @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
         eventPresenter?.getEventList(isAPICall: true)
     }
@@ -100,6 +110,8 @@ extension EventListViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: EventListTableViewCell.self)) as! EventListTableViewCell
         let eventTitle = self.eventTitles[indexPath.section]
+        
+        //Passing data model to cell to retrieve data.
         cell.setDataForCell(eventModel: eventList[eventTitle]![indexPath.row])
         return cell
     }
@@ -118,15 +130,19 @@ extension EventListViewController: UITableViewDelegate {
 //MARK:- EventView
 extension EventListViewController: EventView, ActivityIndicator {
     
+    /// This method start loader indicator animations.
     func startLoading() {
         showIndicator()
     }
     
+    /// This method finish loader indicator animations.
     func finishLoading() {
         hideIndicator()
         refreshControl.endRefreshing()
     }
     
+    /// This method is called from presenter when we get all the required data.
+    /// - Parameter events: events grouped by date.
     func setEvents(_ events: [String : [EventModel]]) {
         eventList = events
     }
